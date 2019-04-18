@@ -111,10 +111,10 @@ class TaskAdapter(
                     itemView.txTitle.text = task.titles
                     var mycard = itemView as CardView
                     if (task.status == 0){
-                        itemView.bt_share.visibility = View.VISIBLE
+                        itemView.bt_share.visibility = View.GONE
                         mycard.setCardBackgroundColor(RED)
                     }else{
-                        itemView.bt_share.visibility = View.GONE
+                        itemView.bt_share.visibility = View.VISIBLE
                         mycard.setCardBackgroundColor(GREEN)
                     }
 
