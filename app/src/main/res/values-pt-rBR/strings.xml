@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lista de Tarefas</string>
+    <string name="txt_title">Titulo</string>
+    <string name="txt_description">Descrição</string>
+</resources>

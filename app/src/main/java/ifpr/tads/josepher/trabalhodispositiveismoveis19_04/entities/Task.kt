@@ -9,11 +9,16 @@ data class Task(
     @ColumnInfo(name = "title")
     var titles: String,
     @ColumnInfo(name = "description")
-    var descriptions: String){
-
+    var descriptions: String,
+    var status: Int){
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0
 
     val fullTask get() = "${titles} ${descriptions}"
     override fun toString() = fullTask
+
+    override fun equals(other: Any?)=
+        if (other == null) false
+        else if (id==0) this === other
+        else id == (other as Task).id
 }
