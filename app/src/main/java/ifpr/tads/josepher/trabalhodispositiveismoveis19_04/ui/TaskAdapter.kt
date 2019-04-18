@@ -75,7 +75,7 @@ class TaskAdapter(
                     itemView.bt_save.setOnClickListener {
                         if (taskEditing != null) {
 
-                            if (task.id.equals(0)) {
+                            if (task.id == 0) {
                                 taskEditing?.let { task ->
                                     task.titles = itemView.txt_title.text.toString()
                                     task.descriptions = itemView.txt_description.text.toString()
@@ -110,6 +110,7 @@ class TaskAdapter(
                 }else{
                     itemView.txTitle.text = task.titles
                     var mycard = itemView as CardView
+
                     if (task.status == 0){
                         itemView.bt_share.visibility = View.GONE
                         mycard.setCardBackgroundColor(RED)

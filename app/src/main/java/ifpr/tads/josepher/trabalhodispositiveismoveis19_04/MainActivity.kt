@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity(), TaskAdapterListener {
 
     lateinit var taskDao: TaskDao
     lateinit var adapter: TaskAdapter
+    private val subject = "Tarefa Feita"
+    private val text_extra = "Oba! Acabei de concluir: "
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -60,8 +62,8 @@ class MainActivity : AppCompatActivity(), TaskAdapterListener {
 
         with(shareIntent) {
             type = "text/plain"
-            putExtra(Intent.EXTRA_SUBJECT, "Tarefa Feita")
-            putExtra(Intent.EXTRA_TEXT, "Oba! Acabei de concluir: "+task.titles)
+            putExtra(Intent.EXTRA_SUBJECT, subject)
+            putExtra(Intent.EXTRA_TEXT, ""+text_extra+task.titles)
         }
         startActivity(shareIntent)
     }

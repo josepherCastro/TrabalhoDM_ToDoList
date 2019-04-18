@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Lista de Tarefas</string>
-    <string name="txt_title">Titulo</string>
+    <string name="txt_title">Título</string>
     <string name="txt_description">Descrição</string>
+    <string name="subject">Tarefa Feita</string>
+    <string name="text_extra">"Oba! Acabei de concluir: "</string>
 </resources>

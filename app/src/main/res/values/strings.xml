@@ -2,4 +2,6 @@
     <string name="txt_title">Title</string>
     <string name="txt_description">Description</string>
     <string name="app_name">To do List</string>
+    <string name="subject">Task Done</string>
+    <string name="text_extra">" Oba! I just concluded"</string>
 </resources>
